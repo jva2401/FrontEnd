@@ -1,10 +1,10 @@
 import { Router } from "express";
 
-import RutaUsuario from "./routes.usuario";
+import RutaUsuario from "./routes.usuario.js";
 
-import RutaDash from "./routes.dash";
-import routesProducts from "./routes.product";
-import RutaFactura from "./routes.facturas";
+import RutaDash from "./routes.dash.js";
+import routesProducts from "./routes.product.js";
+import RutaFactura from "./routes.facturas.js";
 const ruta = Router();
 ruta.use("/", RutaUsuario);
 ruta.use("/", RutaDash);

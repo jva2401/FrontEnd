@@ -2,9 +2,11 @@
   "name": "frontend-2",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js --exec babel-node"
+    "dev": "nodemon index.js --exec babel-node",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",

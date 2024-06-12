@@ -1,4 +1,4 @@
-import { validarToken } from "./controller.usuario.js";
+import { validarToken } from "./controller.usuario";
 import { config } from "dotenv";
 config();
 

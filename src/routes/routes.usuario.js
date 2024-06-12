@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { ListarUsuario, registrarUsuario, salirUsuario } from "../controllers/controller.usuario.js";
-import { ListarClient, registrarClient } from "../controllers/controller.client.js  ";
+import { ListarUsuario, registrarUsuario, salirUsuario } from "../controllers/controller.usuario";
+import { ListarClient, registrarClient } from "../controllers/controller.client";
 
 
 const RutaUsuario = Router();

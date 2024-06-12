@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { MostrarDash } from "../controllers/controller.dash.js";
+import { MostrarDash } from "../controllers/controller.dash";
 
 const RutaDash = Router();
 

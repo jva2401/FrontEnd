@@ -1,7 +1,5 @@
-import app from "../src/server.js";
+import app from "./src/server";
 
-export default async (req, res) => {
-  await new Promise(resolve => app.listen(app.get("port"), resolve));
-  console.log(`Conectado al puerto ${app.get('port')}`);
-  res.end();
-};
+app.listen(app.get("port"), () =>{
+    console.log(`Conectado al puerto ${app.get('port')}`);
+});

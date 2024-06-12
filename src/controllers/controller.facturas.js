@@ -4,7 +4,7 @@ import { config } from "dotenv";
 config();
 
 export const ListarFactura = (req, res) => {
-    const url = `https://proyecto-hs90.onrender.com/api/invoices`; 
+    const url = `https://backend-ulkg.onrender.com/api/invoices`; 
 
     let token = req.cookies.token;
 

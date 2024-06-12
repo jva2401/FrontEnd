@@ -4,7 +4,7 @@ import { config } from "dotenv";
 config();
 
 export const ListarProducto = (req, res) => {
-    const url = `https://proyecto-hs90.onrender.com/api/clients`; 
+    const url = `https://backend-ulkg.onrender.com/api/clients`; 
 
     let token = req.cookies.token;
 

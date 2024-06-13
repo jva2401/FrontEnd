@@ -12,4 +12,4 @@ export const MostrarDash = (req, res) => {
     }
     
     res.redirect("/login.html");
-};
+}; 

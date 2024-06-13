@@ -1,19 +1,19 @@
 import express from "express";
-import {config} from "dotenv";
+import { config } from "dotenv";
 import ejs from "ejs";
-import ruta from "../src/routes/index.js";
+import ruta from "./routes";
+import cookieParser from 'cookie-parser';
+
 config();
 
 const app = express();
-
-app.set('view engine', 'ejs');
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
+app.set('view engine' , 'ejs');
 app.set('views', __dirname+'/views');
-
-app.set("port", process.env.PORT || 5000);
-
+app.set("port" , process.env.PORT || 11000);
 app.use(express.static(__dirname + '/public'));
-app.use("/",ruta);
-
-
+app.use("/", ruta);
 
 export default app;
